@@ -9,13 +9,13 @@
 int main(void)
 {
 	int i;
-	unsigned long long int a = 1, b = 2, c;
+	unsigned long int a = 1, b = 2, c;
 
-	printf("%llu, %llu", a, b);
+	printf("%lu, %lu", a, b);
 	for (i = 2; i < 50; i++)
 	{
 		c = a + b;
-		printf(", %llu", c);
+		printf(", %lu", c);
 		a = b;
 		b = c;
 	}
