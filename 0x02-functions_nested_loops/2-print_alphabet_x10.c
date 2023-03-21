@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- *print_alphabet - print alphabets
+ *print_alphabet_x10 - print alphabets 10 times
  *
- *Description: print_alphabet use to print a to z
+ *Description: print_alphabet x10 to print a to z
  *
  *Return: return void
  *
