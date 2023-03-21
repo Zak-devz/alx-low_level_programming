@@ -5,22 +5,20 @@
  *
  * Return: always 0
  */
+
 int main(void)
 {
-	unsigned int a, b, c, d, s;
+	int i;
+	unsigned long long int a = 1, b = 2, c;
 
-	a = 1;
-	b = 2;
-	c = 3;
-	s = 2;
-	for (d = 2; d <= 32; d++)
+	printf("%llu, %llu", a, b);
+	for (i = 2; i < 50; i++)
 	{
-		if (c % 2 == 0)
-			s = s + c;
+		c = a + b;
+		printf(", %llu", c);
 		a = b;
 		b = c;
-		c = a + b;
 	}
-	printf("%u\n", s);
+	printf("\n");
 	return (0);
 }
