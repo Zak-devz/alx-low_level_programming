@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
 * main - Entry point
 * Return: Always 0 (Success)
@@ -6,14 +6,14 @@
 
 int main(void)
 {
-	putchar('_');
-	putchar('p');
-	putchar('u');
-	putchar('t');
-	putchar('c');
-	putchar('h');
-	putchar('a');
-	putchar('r');
-	putchar('\n');
+	char sen[8] = "_putchar";
+	int i = 0;
+
+	while (i < 8)
+	{
+		_putchar(sen[i]);
+		i++;
+	}
+	_putchar('\n');
 	return (0);
 }
