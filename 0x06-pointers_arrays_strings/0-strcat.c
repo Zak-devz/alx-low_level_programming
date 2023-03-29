@@ -25,7 +25,7 @@ char *_strcat(char *dest, char *src)
 	}
 	somme = len_d + len_s;
 
-	for (i = 0; i < somme; i++)
+	for (i = 0; i < len_s; i++)
 	{
 		dest[len_d + i] = src[i];
 	}
