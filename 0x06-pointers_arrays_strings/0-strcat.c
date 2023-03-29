@@ -27,7 +27,7 @@ char *_strcat(char *dest, char *src)
 
 	for (i = 0; i < somme; i++)
 	{
-		dest[len_d - 1 + i] = src[i];
+		dest[len_d + i] = src[i];
 	}
 	dest[somme] = '\0';
 	return (dest);
