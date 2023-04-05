@@ -28,5 +28,5 @@ int power_operation(int n, int c)
  */
 int _sqrt_recursion(int n)
 {
-	return (sqrt2(n, 1));
+	return (power_operation(n, 1));
 }
