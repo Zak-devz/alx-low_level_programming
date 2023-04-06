@@ -1,0 +1,1 @@
+In C programming, a static library (also known as a "archive" or "lib") is a collection of precompiled object files that are combined into a single file. Static libraries are used to package reusable code that can be linked with other C programs at compile-time to provide additional functionality.
