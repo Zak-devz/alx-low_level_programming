@@ -46,7 +46,7 @@ char *argstostr(int ac, char **av)
 		if (k < c - 1)
 			aout[k] = av[i][j];
 	}
-	aout[ia] = '\0';
+	aout[k] = '\0';
 
 	return (aout);
 }
