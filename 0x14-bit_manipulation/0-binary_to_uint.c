@@ -13,24 +13,19 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
+	int i, len = 0;
+	unsigned int x = 0, mult = 1;
+
 	if (b == NULL)
 		return (0);
-
-	unsigned int num = 0;
-	unsigned int mult = 1;
-	int len = 0;
-
 	while (b[len] != '\0')
 		len++;
-
-	for (int i = len - 1; i >= 0; i--)
+	for (i = len - 1; i >= 0; i--)
 	{
 		if (b[i] != '0' && b[i] != '1')
 			return (0);
-
-		num += (b[i] - '0') * mult;
+		x += (b[i] - '0') * mult;
 		mult *= 2;
 	}
-
-	return (num);
+	return (x);
 }
