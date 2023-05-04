@@ -1,6 +1,6 @@
 /*
  * Auth: Zakaria Rassili
- * File: 0-binary_to_uint.c
+ * File: 2-get_bit.c
  */
 #include "main.h"
 
